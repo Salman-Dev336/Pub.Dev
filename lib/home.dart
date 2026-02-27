@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -11,10 +12,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
+),
      body: SafeArea(
       child: Column(
         children: [
+         Icon(CupertinoIcons.chat_bubble),
+          Icon(CupertinoIcons.add),
+           Icon(CupertinoIcons.home),
+
 
         ],
       )),
