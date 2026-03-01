@@ -38,6 +38,8 @@ dependencies:
   readmore: ^3.0.0
   badges: ^3.1.2
   animated_text_kit: ^4.2.2
+  pin_code_fields: ^9.1.0
+
 
 dev_dependencies:
   flutter_test:

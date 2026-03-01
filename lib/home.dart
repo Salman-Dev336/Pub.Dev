@@ -1,8 +1,9 @@
-// ignore_for_file: unused_import
+// ignore_for_file: avoid_print, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -32,36 +33,45 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Row(
-  mainAxisSize: MainAxisSize.min,
-  children: <Widget>[
-    const SizedBox(width: 20.0, height: 100.0),
-    const Text(
-      'Be',
-      style: TextStyle(fontSize: 43.0,
-      color: Colors.deepPurpleAccent),
-    ),
-    const SizedBox(width: 20.0, height: 100.0),
-    DefaultTextStyle(
-      style: const TextStyle(
-        fontSize: 40.0,
-        fontWeight: FontWeight.bold,
-        fontFamily: 'Horizon',
-        color: Colors.greenAccent,
-      ),
-      child: AnimatedTextKit(
-        animatedTexts: [
-          RotateAnimatedText('AWESOME'),
-          RotateAnimatedText('OPTIMISTIC'),
-          RotateAnimatedText('DIFFERENT'),
-        ],
+            // Center(
+            //   child: PinCodeTextField(
+            //     appContext: context,
+            //     length: 6,
+            //     onChanged: (value) {
+            //       print(value);
+            //     },
+            //   ),
+            // ),
+  //         Row(
+  // mainAxisSize: MainAxisSize.min,
+  // children: <Widget>[
+  //   const SizedBox(width: 20.0, height: 100.0),
+  //   const Text(
+  //     'Be',
+  //     style: TextStyle(fontSize: 43.0,
+  //     color: Colors.deepPurpleAccent),
+  //   ),
+  //   const SizedBox(width: 20.0, height: 100.0),
+  //   DefaultTextStyle(
+  //     style: const TextStyle(
+  //       fontSize: 40.0,
+  //       fontWeight: FontWeight.bold,
+  //       fontFamily: 'Horizon',
+  //       color: Colors.greenAccent,
+  //     ),
+  //     child: AnimatedTextKit(
+  //       animatedTexts: [
+  //         RotateAnimatedText('AWESOME'),
+  //         RotateAnimatedText('OPTIMISTIC'),
+  //         RotateAnimatedText('DIFFERENT'),
+  //       ],
         
-        onTap: () {
-        },
-      ),
-    ),
-  ],
-),
+  //       onTap: () {
+  //       },
+  //     ),
+  //   ),
+  // ],
+  //         ),
           // AnimatedTextKit(animatedTexts: [
           //   TyperAnimatedText(
           //     "Salman khan flutter developer",
