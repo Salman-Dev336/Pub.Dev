@@ -13,6 +13,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+           badges.Badge(
+            badgeContent: Text('3'),
+            child: Icon(Icons.shopping_cart,
+             size: 50,
+              color: Colors.white),
+           ),
+         SizedBox(width: 20,)
+        ],
         backgroundColor: Colors.blueAccent,
 ),
      body: SafeArea(
@@ -20,14 +29,14 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-         Center(
-           child: badges.Badge(
-            badgeContent: Text('3'),
-            child: Icon(Icons.shopping_cart,
-             size: 50,
-              color: Colors.blueAccent),
-           ),
-         )
+        //  Center(
+        //    child: badges.Badge(
+        //     badgeContent: Text('3'),
+        //     child: Icon(Icons.shopping_cart,
+        //      size: 50,
+        //       color: Colors.blueAccent),
+        //    ),
+        //  )
         ],
       )),
     );
