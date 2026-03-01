@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:readmore/readmore.dart';
+import 'package:badges/badges.dart' as badges;
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,17 +16,26 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.blueAccent,
 ),
      body: SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Center(
-              child: Badge(),
-            )
-          
-          ],
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+         Center(
+           child: badges.Badge(
+            badgeContent: Text('Messages'),
+            badgeStyle: badges.BadgeStyle(
+              shape: badges.BadgeShape.square,
+              badgeColor: Colors.teal,
+              borderRadius: BorderRadius.circular(5),
+              
+            ),
+            badgeAnimation: badges.BadgeAnimation.scale(
+              animationDuration: Duration(seconds: 3),
+            ),
+           
+           ),
+         )
+        ],
       )),
     );
   }
